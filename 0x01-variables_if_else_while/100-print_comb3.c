@@ -13,17 +13,17 @@ int main(void)
 
 	for (x1 = 0; x1 <= 9; x1++)
 	{
-		for (x1 = 1; x2 <= 9; x2++)
+		for (x2 = 1; x2 <= 9; x2++)
 		{
 			if (x1 != x2 && x1 < x2)
 			{
 				putchar(x1 + '0');
 				putchar(x2 + '0');
-			}
-			else if (x1 != 8 || x2 != 9)
-			{
-				putchar(',');
-				putchar(' ');
+				if (x1 != 8 || x2 != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
