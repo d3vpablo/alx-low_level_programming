@@ -10,7 +10,6 @@
 int main(void)
 {
 	char lca;
-	
 	for (lca = 'z'; lca >= 'a'; lca--)
 		putchar(lca);
 	putchar('\n');
